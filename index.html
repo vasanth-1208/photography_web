@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Photography Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #000;
+            color: #fff;
+            text-align: center;
+        }
+        header {
+    padding: 25px; /* Increase padding to make the header slightly bigger */
+    font-size: 1.2em; /* Increase font size slightly */
+}
+.home-image {
+    width: 80%; /* Adjust width */
+    max-width: 800px; /* Set max width */
+    display: block;
+    margin: 20px auto; /* Center image */
+    border-radius: 10px; /* Optional: Rounded corners */
+}
+
+
+        nav ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+        }
+        nav ul li {
+            display: inline;
+        }
+        nav ul li a {
+            color: #ff9800;
+            text-decoration: none;
+            font-size: 18px;
+            transition: 0.3s;
+            padding: 12px 10px; /* Make navigation links slightly wider */
+            font-size: 20px;
+        }
+        nav ul li a:hover {
+            color: #fff;
+        }
+        .container {
+            max-width: 1200px;
+            margin: auto;
+            padding: 20px;
+        }
+        #home {
+    font-size: 1.2em; 
+    padding: 15px; /* Add more space around it */
+}
+#gallery {
+    font-size: 1.3em; /* Make text bigger */
+    padding: 60px 20px; /* Increase padding for more space */
+    background-color: #111; /* Dark background to make it stand out */
+    margin-top: 40px; /* Add space between sections */
+    border: 2px solid #ff9800; /* Orange border */
+    border-radius: 15px; /* Rounded edges */
+    background-color: #111; 
+    gap: 25px;
+}
+.gallery-container {
+    display: flex;
+    flex-wrap: wrap; /* Allows items to wrap into rows */
+    justify-content: space-between; /* Adds space between items */
+    align-items: center;
+    gap: 30px; /* 🔥 Adds space between flex items */
+    padding: 20px;
+}
+
+.gallery-item {
+    flex: 1 1 calc(33.33% - 40px); /* Adjusts width for 3 columns */
+    max-width: 100%;
+    text-align: center;
+    border: 3px solid #ff9800;
+    padding: 10px;
+    border-radius: 10px;
+    background-color: #222; /* Slightly lighter black */
+}
+
+
+        .gallery-categories {
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+            margin-bottom: 20px;
+        }
+        .gallery-categories a {
+            background: #ff9800;
+            color: #fff;
+            text-decoration: none;
+            padding: 10px 15px;
+            font-size: 16px;
+            border-radius: 5px;
+            transition: 0.3s;
+        }
+        .gallery-categories a:hover {
+            background: #fff;
+            color: #000;
+        }
+        .profile, .contact {
+            padding: 25px;
+            background: #111;
+        }
+        form {
+            max-width: 500px;
+            margin: auto;
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
+        input, textarea, button {
+            padding: 20px;
+            border: none;
+            border-radius: 5px;
+        }
+        button {
+            background: #ff9800;
+            color: #fff;
+            cursor: pointer;
+            font-size: 16px;
+        }
+        footer {
+            background: #222;
+            text-align: center;
+            padding: 20px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Photography Portfolio</h1>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#gallery">Gallery</a></li>
+                <li><a href="#profile">Photographer Profile</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="home" class="container">
+        <h2>Welcome to My Photography Portfolio</h2>
+        <p>Capturing moments that last forever.</p>
+        <img src="https://www.hdwallpapers.in/download/brown_deer_nature_animals_trees_sunset_4k_hd-HD.jpg"  class="home-image">
+    </section>
+     
+    <section id="gallery" class="container">
+        <h2>Gallery</h2>
+        <div class="gallery-categories">
+            <a href="wildlife.html">Wildlife</a>
+            <a href="landscape.html">Landscape</a>
+            <a href="potraits.html">Potraits</a>
+        </div>
+    </section>
+
+    <section id="profile" class="profile">
+        <h2>Photographer Profile</h2>
+        <img src="https://img.freepik.com/premium-photo/photographer-holding-camera_756748-41552.jpg">
+        <h4 style="color: #ff9800">Welcome to Jaga's world of photography – where every moment is a masterpiece." </h4>
+        <p style="line-height: 1.8; margin: 20px 0;">"I am a passionate professional photographer specializing in capturing breathtaking moments through my lens.<br> With years of experience in wildlife, landscape, and portrait photography, I bring stories to life through every frame.<br> My work focuses on blending natural beauty with artistic composition to create visually compelling images.<br> I believe in the power of photography to evoke emotions, preserve memories, and inspire creativity. <br>Explore my portfolio to witness the world through my unique perspective."</p>
+    </section>
+
+    <section id="contact" class="contact">
+        <h2>Contact Me</h2>
+        <form>
+            <input type="text" placeholder="Your Name" required>
+            <input type="email" placeholder="Your Email" required>
+            <textarea placeholder="Your Message" required></textarea>
+            <button type="submit">Send Message</button>
+        </form>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 Photography Portfolio. All rights reserved.</p>
+    </footer>
+</body>
+</html>

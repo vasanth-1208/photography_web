@@ -1,0 +1,67 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #000;
+    color: #fff;
+    text-align: center;
+}
+header {
+    background: #111;
+    padding: 20px;
+}
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+nav ul li {
+    display: inline;
+}
+nav ul li a {
+    color: #ff9800;
+    text-decoration: none;
+    font-size: 18px;
+    padding: 10px;
+    transition: 0.3s;
+}
+nav ul li a:hover {
+    color: #fff;
+}
+.gallery-container {
+    display: flex;
+    flex-wrap: wrap; /* Allow wrapping */
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+    height: 100vh; /* Full viewport height */
+    gap: 20px; /* Space between images */
+    padding: 20px;
+    background-color: #000; /* Black background */
+}
+
+.gallery-item {
+    flex: 1 1 calc(33.33% - 40px); /* 3 columns with spacing */
+    max-width: 30%; /* Ensure they don’t stretch too much */
+    text-align: center;
+    border: 2px solid #ff9800;
+    border-radius: 10px;
+}
+
+.gallery-item img {
+    width: 100%; /* Ensure it fits the container */
+    max-width: 400px; /* Adjust for larger screens */
+    height: auto;
+    border-radius: 10px;}
+.gallery-item p {
+    margin-top: 10px;
+    font-size: 16px;
+}
+footer {
+    background: #222;
+    text-align: center;
+    padding: 20px;
+    margin-top: 20px;
+}
